@@ -16,11 +16,7 @@ export default function HomeScreen() {
         <Text className={darkmode ? 'mb-6 text-center text-base text-slate-300' : 'mb-6 text-center text-base text-slate-600'}>
           Expo SDK 56 + Tailwind CSS
         </Text>
-        <TouchableOpacity onPress={() => {router.push('/register')}} className="rounded-xl bg-blue-500 px-6 py-3 active:bg-blue-600">
-          <Text className="text-center text-base font-semibold text-white">
-            Go to register page
-          </Text>
-        </TouchableOpacity>
+        
          <TouchableOpacity onPress={() => {setDarkmode(prevState => !prevState)}} className="rounded-xl bg-blue-500 px-6 py-3 mt-4 active:bg-blue-600">
           <Text className="text-center text-base font-semibold text-white">
             {darkmode ? 'Disable' : 'Enable'} Dark Mode
